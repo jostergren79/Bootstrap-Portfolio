@@ -223,3 +223,10 @@ input[type=submit] {
   text-align: center;
   
 }
+
+.navlink {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+}
