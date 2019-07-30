@@ -6,16 +6,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About</title>
-  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
+<!--navbar has been updated and is fixed top-->
 
   <header id="masthead">
     <div class="container">
-      <nav>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="sticky-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                  
                 <ul class="navbar-nav">
@@ -31,23 +32,43 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
-                
+      
                 </ul>
               </div>
             </nav>
-      </nav>
+    </div>    
+    
     </div>
   </header>
+
+  <!--including rows and columns and bonus sub columns and rows-->
 
   <div class="container">
       <div class="row">
         <div class="col-sm">
             <Title>Jason Ostergren</Title>
 
-            <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+            <!--image is configured to be responsive-->
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+            <img src="assets/images/cat.jpg" class="img-fluid" alt="Responsive image">
+
+           <div class="row">
+                <div class="col-sm">
+                    <Title>Jason Ostergren</Title>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem, eum dolor ipsam fugiat corporis quae possimus repellendus optio aperiam sequi recusandae eos eligendi perferendis assumenda distinctio illo culpa vero!</p>
+                </div>
+                <div class="col-sm">
+                    <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
         
+                </div>
+                <div class="col-sm">
+                    <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        
+                </div>
+        
+         
+              </div>
         </div>
         <div class="col-sm">
             <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
@@ -57,16 +78,23 @@
             <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
         </div>
+
+ 
       </div>
     </div>
 
-  <div id="main-container" class="container">
+<!--updated sticky footer-->
+
+<div id="main-container" class="container">
   
 <div class="fixed-bottom">
+  
   <footer>
     <div class="wrapper">
       Copyright &copy; 
-   </footer>
+   
+  </footer>
+
 </div>
 
 </body>

@@ -215,3 +215,11 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+  
+}
