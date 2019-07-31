@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="en-us">
 
-
+<!--reordered head-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About</title>
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>About Me</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 
 <body>
-<!--navbar has been updated and is stick top top but I'm having difficulty keeping the links visible.-->
-
-  <header id="masthead">
-
+<!--navbar has been updated but I'm having difficulty keeping the links visible after reducing px-->
+<header id="masthead">
+  <div class="container"> 
+    <a href="index.html" id="logo"> Jason Ostergren</a>
+   
           <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                  
@@ -37,17 +38,15 @@
               </div>
           </nav>
   
-  </header>
+</header>
 
-  <!--including rows and columns and bonus sub columns and rows-->
+  <!--image rows and columns are configured to be responsive-->
 
   <div class="container">
       <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
             <Title>Jason Ostergren</Title>
-
-            <!--image is configured to be responsive-->
 
             <img src="assets/images/cat.jpg" class="img-fluid" alt="Responsive image">
 
@@ -71,10 +70,11 @@
         </div>
         <div class="col-sm">
             <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis tempore quidem accusantium molestiae facilis numquam voluptas a quisquam consectetur eius qui laborum assumenda, saepe porro excepturi est eligendi ipsam.</p>
         </div>
         <div class="col-sm">
             <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsa ipsum in temporibus perspiciatis incidunt! Hic animi sed tempore, asperiores repellat voluptas alias, quae minima dolore quisquam exercitationem modi ut!</p>
 
         </div>
 
