@@ -1,102 +1,81 @@
-<!doctype html>
-<html lang="en-us">
+<!--		Hello! I hope you enjoy my code.
+  
+            _..-'(                      )`-..  
+         ./'. '||\\       (\_/)       //||` .`\.  
+       /'.|'.'||||\|..    )O O(    ..|/||||`.`|.`\  
+    ./'.|'.|| ||||||````` '`"'` '''''|||||| ||.`|.`\.  
+  ./'.|'.|||| |||||||||||.     .||||||||||| |||||.||.`.  
+ '|||'.|||||| |||||||||||{     }||||||||||| ||||||.`||.`  
+'.|| |||||||| |/'  ``\||``     ''||/''  `\| |||||||| ||.`  
+|/ \./'    `\./        \!|\   /|!/        \./'    `\./`\|  
+V   V        V         }' `\ /' `{         V        V   V  
+`   `        `              V              '        '   '  
+-->
 
-<!--reordered head-->
-<head>
-  <meta charset="UTF-8">
+<!DOCTYPE html>
+<html><head>
+  <title>Danniella Mortezaee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About Me</title>
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700" rel="stylesheet" type="text/css"> <!--WEB FONT-->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200"> <!--WEB FONT-->
+  <!-- And now, for a bunch of favicon shenanigans -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#16c49f">
+  <meta name="theme-color" content="#000000">
+  <!-- S/O to https://realfavicongenerator.net/ for the generator -->
+  
 </head>
 
 <body>
-<!--navbar has been updated but I'm having difficulty keeping the links visible after reducing px-->
-<header id="masthead">
-  <div class="container"> 
-    <a href="index.html" id="logo"> Jason Ostergren</a>
-   
-          <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                 
-                <ul class="navbar-nav">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                 
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
+
+  <div id="wrapper"> <!-- creates space distinct from footer -->
+    <div id="header">
+      <div id="nav">
+
+      <a href="./index.html"><div class="fivenav">	Home	</div></a>
       
-                </ul>
-              </div>
-          </nav>
-  
-</header>
+      <a href=""><div class="fivenav">	Résumé	</div></a>
+      
+      <a href="./portfolio.html"><div class="fivenav">	Portfolio	</div></a>
+      
+      <a href="./contact.html"><div class="fivenav">	Contact	</div></a>
 
-  <!--image rows and columns are configured to be responsive-->
+      <a href=""><div class="fivenav"> Purchase	</div></a>
 
-  <div class="container">
-      <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm">
-            <Title>Jason Ostergren</Title>
-
-            <img src="assets/images/cat.jpg" class="img-fluid" alt="Responsive image">
-
-           <div class="row">
-                <div class="col-sm">
-                    <Title>Jason Ostergren</Title>
-
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem, eum dolor ipsam fugiat corporis quae possimus repellendus optio aperiam sequi recusandae eos eligendi perferendis assumenda distinctio illo culpa vero!</p>
-                </div>
-                <div class="col-sm">
-                    <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-        
-                </div>
-                <div class="col-sm">
-                    <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        
-                </div>
-        
-         
-              </div>
-        </div>
-        <div class="col-sm">
-            <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis tempore quidem accusantium molestiae facilis numquam voluptas a quisquam consectetur eius qui laborum assumenda, saepe porro excepturi est eligendi ipsam.</p>
-        </div>
-        <div class="col-sm">
-            <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsa ipsum in temporibus perspiciatis incidunt! Hic animi sed tempore, asperiores repellat voluptas alias, quae minima dolore quisquam exercitationem modi ut!</p>
-
-        </div>
-
- 
+      <div class="clearfloats"></div>
       </div>
       </div>
-    </div>
 
-<!--updated sticky footer-->
-
-<div id="main-container" class="container">
-  
-<div class="fixed-bottom">
-  
-  <footer>
-    <div class="wrapper">
-      Copyright &copy; 
-   
-  </footer>
-
+<div class="clearfloats"></div>
+      <div id="content">
+<img id="placeholder" src="./assets/images/65344428758__873847DE-9B9C-499B-8CEF-CFE2CB5263DE.jpg" alt="this is the image alt">
+<div id="home">
+Art by Danniella
 </div>
+<h2 style="text-align: center;"> Artist Statement </h2>
 
-</body>
+<br>
+<br>
+<div id="about"></div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ut velit quibusdam harum voluptatem non illo totam, cumque dolores doloremque nisi, necessitatibus mollitia, minus facere vel unde consequatur? Cum, quasi?</p>
 
-</html>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias id necessitatibus eius tenetur tempore esse cumque praesentium accusamus saepe nisi beatae nesciunt provident nam quisquam velit optio, quasi minima unde.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis doloribus nihil sit deserunt libero incidunt, exercitationem quisquam facere optio nulla aliquid ut repudiandae officia ducimus tenetur quam soluta harum! </p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ratione nostrum. Necessitatibus nam dicta id neque, doloribus pariatur architecto deserunt laudantium sapiente, earum corporis sint adipisci nostrum fugit voluptate minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officiis hic dolore veniam repudiandae? Excepturi ut vero eum! Quisquam voluptatem rem nam, officiis nihil repellat incidunt sed sit. Eum, totam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ullam tenetur. Quia quidem animi impedit placeat enim maiores hic aperiam sapiente, nesciunt facere corrupti assumenda nemo, in quis tempore alias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, omnis non dolorem quam qui consequuntur porro corporis similique maiores, quas provident voluptatibus asperiores autem facilis alias, est repudiandae tempore nihil.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam nobis possimus illum at nulla dolore recusandae quia, incidunt quasi a, placeat maxime. Veniam voluptatum quas rerum? Dicta, ipsa excepturi!</p>
+
+<div id="service"></div><!--This anchor div is in a silly spot to deal with the header--><p></p>
+
+<br>
+
+                  </div> <!-- closes content -->
+  </div> <!-- closes wrapper -->
+  <div id="footer">
+      © Danniella Mortezaee 2021		</div>
+
+</body></html>
