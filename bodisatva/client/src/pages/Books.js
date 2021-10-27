@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DeleteBtn from "../components/DeleteBtn";
+import EditBtn from "../components/EditBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -24,6 +25,12 @@ class Books extends Component {
       .then(res =>
         this.setState({ books: res.data, title: "", author: "", synopsis: "" })
       )
+      .catch(err => console.log(err));
+  };
+
+  updateBook = id => {
+    API.updateBook(id)
+      .then(res => this.loadBooks())
       .catch(err => console.log(err));
   };
 
@@ -101,6 +108,7 @@ class Books extends Component {
                         {book.title} by {book.author}
                       </strong>
                     </Link>
+                    <EditBtn onClick={() => this.updateBook(book._id)} />
                     <DeleteBtn onClick={() => this.deleteBook(book._id)} />
                   </ListItem>
                 ))}

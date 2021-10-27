@@ -13,6 +13,10 @@ export default {
   deleteBook: function(id) {
     return axios.delete("/api/books/" + id);
   },
+   // Updates the book with the give id
+   updateBook: function(id) {
+    return axios.put("/api/books/", + id);
+  },
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
