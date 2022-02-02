@@ -1,35 +1,50 @@
-Body {
-  background-color: rgb(192, 213, 245);
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.NavBar, h1 {
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.information input {
+  width: 333px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+button {
+  width: 350px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
  
-  text-align: center;
-}
-
-img {
-  opacity: 0.75;
-  padding: .5rem;
-  background-color: red
 }
 
 
-
-.parent {
-  background: whitesmoke;
-  text-align: center;
-  margin: .25rem;
+button:hover {
+  cursor: pointer;
 }
 
-
-.child {
-  background: whitesmoke;
-  padding: 1rem;
-  text-align: center;
-
+.records {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
-
-.inline-block-child {
-  display: inline-block;
+.record {
+  width: 90%;
+  background-color: seashell;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Courier New', Courier, monospace;
 }
-
